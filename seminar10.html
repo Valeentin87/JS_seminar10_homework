@@ -16,12 +16,7 @@
       a {
         text-decoration: none;
       }
-      .product-box {
-        display: flex;
-        gap: 12px;
-        flex-wrap: wrap;
-      }
-      
+
       .product {
         max-width: 370px;
         background-color: #f3eded;
@@ -61,12 +56,9 @@
         color: #000;
       }
     </style>
-
   </head>
   <body>
-    <div class="product-box">
-      <div class="content"></div>
-    </div>
+    <div class="product"></div>
 
     <script src="data.js"></script>
     <script defer>
@@ -75,7 +67,7 @@
       Object.keys(dataParse).forEach((key) => {
         console.log(dataParse[key]);
       });
-      const content = document.querySelector(".content");
+      const content = document.querySelector(".product");
       function createCard() {
         Object.keys(dataParse).forEach((key) => {
           dataBlock = `
