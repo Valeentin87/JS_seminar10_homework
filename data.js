@@ -1,9 +1,9 @@
-const card_data = `{
+const cardData = `{
     "card_1" : {
         "product_image" : "img/product_1.jpg",
         "product_name" : "ELLERY X M'O CAPSULE",
         "product_text" : "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
-        "product_price" : "$52.00",   
+        "product_price" : "$52.00"   
     },
     "card_2" : {
         "product_image" : "img/product_2.jpg",
@@ -35,5 +35,5 @@ const card_data = `{
         "product_text" : "Known for her sculptural takes on traditional tailoring,Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
         "product_price" : "$52.00"
     }
-
-}`
+}
+`

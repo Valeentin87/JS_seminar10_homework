@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar10</title>
+</head>
+<body>
+    <div class="content">
+    </div>
+<script src="data.js"></script>    
+<script defer>
+    const dataParse = JSON.parse(cardData);
+    console.log(dataParse);
+    Object.keys(dataParse).forEach(key => {
+        console.log(dataParse[key]);
+    });
+    const content = document.querySelector(".content")
+    function createCard() {
+        Object.keys(dataParse).forEach(key => {
+            dataBlock = `
+            <div class="product">
+          <div class="product_image_box">
+            <img src="${dataParse[key].product_image}" class="product_image" alt="" />
+          </div>
+          
+          <div class="product_content">
+            <a href="#" class="product_name">${dataParse[key].product_name}</a>
+            <p class="product_text">
+                ${dataParse[key].product_text}
+            </p>
+            <p class="product_price">${dataParse[key].product_price}</p>
+          </div>
+        </div>
+            `;
+        content.insertAdjacentHTML('beforeend', dataBlock);    
+        });
+    }
+
+    createCard()
+
+
+</script>
+</body>
+</html>
